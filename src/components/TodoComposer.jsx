@@ -22,7 +22,7 @@ const TodoComposer = ({ handleAddTodo }) => {
   };
 
   const handleAddTodoAction = () => {
-    if (charsCount <= CHAR_LIMIT) {
+    if (charsCount <= CHAR_LIMIT && charsCount) {
       const todo = createTodo(label);
       handleAddTodo(todo);
       setLabel("");
