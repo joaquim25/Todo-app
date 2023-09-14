@@ -1,0 +1,52 @@
+.func__container {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    background-color: #867b2198;
+    box-shadow: 0 6px 7px 1px #242424;
+    margin: -3rem auto 3rem auto;
+    padding: 0 5%;
+    width: 40%;
+    min-width: 180px;
+    z-index: 4;
+    border-radius: 0 0 6px 6px;
+}
+
+.func__item {
+    margin: .3rem 0;
+    color: #dadadac9;
+    font-size: .8rem;
+    flex: 1 0 calc(50% - 1rem);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.func__item:hover {
+    color: #181818;
+    scale: 1.01;
+}
+
+.func__item:hover .icons--dock {
+    color: #181818;
+    scale: 1.01;
+}
+
+.item--warn {
+    color: #7c0808;
+}
+
+@media (max-width: 1180px) {
+    .func__item {
+        flex: 1 0 calc(100% - 1rem);
+        text-align: center;
+        width: 30%;
+    }
+
+    .func__container {
+        width: 30%;
+        padding: 0 5px;
+    }
+}

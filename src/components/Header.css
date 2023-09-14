@@ -1,0 +1,29 @@
+.header__container {
+    height: 100px;
+    display: flex;
+    margin-bottom: -40px;
+    z-index: -1;
+
+    background-color: #f5f7e6;
+    opacity: 0.8;
+    background-size: 30px 31px;
+    background-image: repeating-linear-gradient(0deg, #020202, #020202 1px, #cccaab 1px, #cccaab);
+    border-bottom: 5px solid #b8a034;
+}
+
+.header__title {
+    font-family: 'Caveat', cursive;
+    font-size: 1.4rem;
+    color: rgb(29, 29, 29);
+    position: relative;
+    top: 25px;
+    font-weight: 200;
+    left: 3%;
+}
+
+@media (max-width: 425px) {
+    .header__title {
+        font-size: 1.2rem;
+        top: 30px;
+    }
+}

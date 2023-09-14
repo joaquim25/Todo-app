@@ -1,0 +1,40 @@
+.icons {
+    width: 40px;
+    color: rgba(185, 185, 185, .9);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.icons:hover {
+    color: #cfbb24;
+    scale: 1.1;
+}
+
+.icons--sm {
+    width: 25px;
+    color: #cfbb2498;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.icons--sm:hover {
+    color: #cfbb24;
+    scale: 1.1;
+}
+
+.icons--dock {
+    width: 17px;
+    color: #dadadac9;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+
+input[type="text"] {
+    all: unset;
+    cursor: text;
+    width: 100%;
+    color: rgb(227, 227, 227);
+}
