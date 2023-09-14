@@ -3,14 +3,13 @@ footer {
     bottom: 0;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
 }
 
 .footer__container {
     background-color: #cfcba0;
-    width: 80%;
+    width: 400px;
     min-width: 240px;
-    max-width: 400px;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;

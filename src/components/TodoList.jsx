@@ -7,6 +7,7 @@ const TodoList = ({ todos, handleUpdateTodo, handleDeleteTodo }) => {
       <ul className="todoItems">
         {todos.map((todo) => (
           <Todo
+            id={todo.id}
             key={todo.id}
             todo={todo}
             handleUpdateTodo={handleUpdateTodo}

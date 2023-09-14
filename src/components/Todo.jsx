@@ -6,7 +6,7 @@ import {
 import "./Todo.css";
 import { useState } from "react";
 
-const Todo = ({ todo, handleUpdateTodo, handleDeleteTodo }) => {
+const Todo = ({ id, todo, handleUpdateTodo, handleDeleteTodo }) => {
   const [editing, setEditing] = useState(false);
 
   const handleCheckboxClick = () =>
@@ -23,21 +23,21 @@ const Todo = ({ todo, handleUpdateTodo, handleDeleteTodo }) => {
       label: e.target.value,
     });
 
-  const handleDeleteClick = (e) => {
-    const Todo = e.target.parentElement.parentElement;
-    Todo.className = "fade";
+  const handleDeleteClick = () => {
+    const toDo = document.getElementById(todo.id);
+    toDo.classList = "todoItem fade";
+
     setTimeout(() => {
       handleDeleteTodo(todo.id);
-    }, 600);
+    }, 500);
   };
 
   return (
-    <li className="todoItem">
-      <label htmlFor={todo.id} className="todoItem__text">
+    <li className={todo.completed ? "todoItem completed" : "todoItem"} id={id}>
+      <label className="todoItem__text">
         <div>
           <input
             type="checkbox"
-            id={todo.id}
             checked={todo.completed}
             onChange={handleCheckboxClick}
           />
@@ -47,6 +47,7 @@ const Todo = ({ todo, handleUpdateTodo, handleDeleteTodo }) => {
             type="text"
             value={todo.label}
             onChange={handleEditTodo}
+            onKeyDown={(e) => (e.key == "Enter" ? handleEditClick() : null)}
             className="todoItem__input"
           />
         ) : (

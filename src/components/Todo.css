@@ -28,6 +28,11 @@ input[type="checkbox"]:checked {
     justify-content: space-between;
     padding: 1.5rem 2rem;
     border-radius: .5rem;
+    transition: all .4s ease-in-out;
+}
+
+.completed {
+    order: 1;
 }
 
 .todoItem__text {
@@ -63,14 +68,6 @@ input[type="checkbox"]:checked {
 }
 
 .fade {
-    background-color: #1a1a1a;
-    box-shadow: 0 3px 10px 1px #242424;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1.5rem 2rem;
-    border-radius: .5rem;
-    transition: all .18s ease-in-out;
     opacity: 0;
 }
 

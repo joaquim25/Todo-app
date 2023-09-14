@@ -3,15 +3,15 @@
     position: relative;
     display: flex;
     justify-content: space-around;
-    column-gap: 10px;
+    column-gap: 30px;
     flex-wrap: wrap;
     background-color: #867b2198;
     box-shadow: 0 6px 7px 1px #242424;
     margin: -3rem auto 3rem auto;
-    padding: 0 5%;
-    width: 40%;
+    padding: 0 2rem;
+    width: 450px;
     min-width: 180px;
-    z-index: 4;
+    z-index: 1;
     border-radius: 0 0 6px 6px;
 }
 
@@ -42,11 +42,10 @@
     .func__item {
         flex: 1 0 calc(100% - 1rem);
         text-align: center;
-        width: 30%;
     }
 
     .func__container {
-        width: 30%;
-        padding: 0 5px;
+        width: 190px;
+        padding: 0;
     }
 }
