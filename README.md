@@ -2,7 +2,7 @@
 
 This is a simple React Todo App that allows you to manage your tasks easily. You can add new todos, mark them as completed, edit existing ones, and delete them as needed. This README file provides an overview of the project's structure and functionality.
 
-## Demo
+## Preview
 https://github.com/joaquim25/Todo-app/assets/115705731/516013f6-18bc-4192-8545-f8dd922a37de
 
 ## Project Structure
